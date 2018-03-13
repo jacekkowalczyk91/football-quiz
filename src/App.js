@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import update from 'react-addons-update';
-import quizQuestions from './api/database';
+import database from  './api/database'
 import Quiz from './components/Quiz/Quiz';
 import Result from './components/Quiz/Result';
+
 
 class App extends Component {
 
@@ -16,7 +17,9 @@ class App extends Component {
             answerOptions: [],
             answer: '',
             answersCount: {
-                asd: 0,
+                slabyWynik: 0,
+                dobryWynik: 0,
+
             },
             result: ''
         };
@@ -25,9 +28,9 @@ class App extends Component {
     }
 
     componentWillMount() {
-        const shuffledAnswerOptions = quizQuestions.map((question) => this.shuffleArray(question.answers));
+        const shuffledAnswerOptions = database.map((question) => this.shuffleArray(question.answers));
         this.setState({
-            question: quizQuestions[0].question,
+            question: database[0].question,
             answerOptions: shuffledAnswerOptions[0]
         });
     }
@@ -54,7 +57,7 @@ class App extends Component {
     handleAnswerSelected(event) {
         this.setUserAnswer(event.currentTarget.value);
 
-        if (this.state.questionId < quizQuestions.length) {
+        if (this.state.questionId < database.length) {
             setTimeout(() => this.setNextQuestion(), 300);
         } else {
             setTimeout(() => this.setResults(this.getResults()), 300);
@@ -79,8 +82,8 @@ class App extends Component {
         this.setState({
             counter: counter,
             questionId: questionId,
-            question: quizQuestions[counter].question,
-            answerOptions: quizQuestions[counter].answers,
+            question: database[counter].question,
+            answerOptions: database[counter].answers,
             answer: ''
         });
     }
@@ -97,9 +100,17 @@ class App extends Component {
     setResults(result) {
         if (result.length === 1) {
             this.setState({ result: result[0] });
-        } else {
-            this.setState({ result: 'Undetermined' });
         }
+        else if(result.length === 1){
+            this.setState({ result: 'slaby wynik'})
+        }
+        else if(result.length === 3){
+            this.setState({ result: 'ok wynik'})
+        }
+        else if(result.length <= 4){
+            this.setState({ result: 'dobry wynik'})
+        }
+
     }
 
     renderQuiz() {
@@ -109,7 +120,7 @@ class App extends Component {
                 answerOptions={this.state.answerOptions}
                 questionId={this.state.questionId}
                 question={this.state.question}
-                questionTotal={quizQuestions.length}
+                questionTotal={database.length}
                 onAnswerSelected={this.handleAnswerSelected}
             />
         );
@@ -125,7 +136,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div className="App-header">
-                    <h2>React Quiz</h2>
+                    <h2>Football Quiz</h2>
                 </div>
                 {this.state.result ? this.renderResult() : this.renderQuiz()}
             </div>

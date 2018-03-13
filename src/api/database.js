@@ -1,26 +1,25 @@
-const quizQuestions = [
+var quizQuestions = [
     {
         question: "Która drużyna ma na swoim koncie najwiecęj zwycięstw w Lidze Mistrzów?",
         answers: [
             {
-                type: 'asd',
+                type:'slabyWynik',
                 content: "Chelsea"
             },
             {
-                type: 'asd',
-
+                type:'dobryWynik',
                 content: "Real Madryt"
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "AC Milan"
             },
             {
-                type: 'asd',
-
-                content: "Bayern Monachium"
+                type:'slabyWynik',
+                content: "Bayern"
             }
+
+
 
 
         ]
@@ -29,25 +28,23 @@ const quizQuestions = [
         question: "Kto był bohaterem najdroższego transferu w historii?",
         answers: [
             {
-                type: 'asd',
-
+                type:'dobryWynik',
                 content: "Neymar JR."
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Cristiano Ronaldo"
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Lionel Messi"
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Jakub Wawrzyniak"
             }
+
+
 
 
         ]
@@ -56,23 +53,19 @@ const quizQuestions = [
         question: "Kto strzelił najwięcej bramek dla Reprezntacji Polski w Piłkę Nożną?",
         answers: [
             {
-                type: 'asd',
-
+                type:'dobryWynik',
                 content: "Robert Lewandowski"
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Sławomir Peszko"
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Włodzimierz Lubański"
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Grzegorz Lato"
             }
 
@@ -82,21 +75,19 @@ const quizQuestions = [
         question: "Kto strzelił najwięcej bramek na Mistrzostwach Świata w Piłkę Nożną?",
         answers: [
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Gerd Muller"
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Pele"
             },
-            {type: 'asd',
-
+            {
+                type:'dobryWynik',
                 content: "Miroslav Klose"
             },
-            {type: 'asd',
-
+            {
+                type:'slabyWynik',
                 content: "Ronaldo"
             }
 
@@ -106,158 +97,134 @@ const quizQuestions = [
         question: "W jakim klubie grał Cristiano Ronaldo przed przyjściem do Realu Madryt?",
         answers: [
             {
-                type: 'asd',
-
+                type:'dobryWynik',
                 content: "Manchaster United"
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Barcelona"
             },
             {
-                type: 'asd',
-
-                content: "Chealse"
+                type:'slabyWynik',
+                content: "Chelsea"
             },
             {
-                type: 'asd',
-
+                type:'slabyWynik',
                 content: "Juventus"
             }
 
         ]
     },
-    {
-        question: "Jakie drużyn wzięły udział w meczu, w którym padł najwyższy wynik w historii Ligi Mistrzów?",
-        answers: [
-            {
-                type: 'asd',
-
-                content: "Legia Warszawa vs Borussia Dortmund"
-            },
-            {
-                type: 'asd',
-
-                content: "Real Madryt vs PAOK Saloniki"
-            },
-            {
-                type: 'asd',
-
-                content: "Manchester City vs FC Basel"
-            },
-            {
-                type: 'asd',
-
-                content: "FC Barcelona vs PSG"
-            }
-
-        ]
-    },
-    {
-        question: "Który zespół może się poszczycić najwiekszą liczbą zwycięstw w angielskiej Premier League?",
-        answers: [
-            {
-                type: 'asd',
-
-                content: "Manchester City"
-            },
-            {
-                type: 'asd',
-
-                content: "Arsenal"
-            },
-            {
-                type: 'asd',
-
-                content: "Aston Villa"
-            },
-            {
-                type: 'asd',
-
-                content: "Manchester United"
-            }
-
-        ]
-    },
-    {
-        question: "Kto był zwycięzcą Mistrzostw Europy w 2012 roku?",
-        answers: [
-            {
-                type: 'asd',
-
-                content: "Niemcy"
-            },
-            {
-                type: 'asd',
-
-                content: "Włochy"
-            },
-            {
-                type: 'asd',
-
-                content: "Hiszpania"
-            },
-            {
-                type: 'asd',
-
-                content: "San Marino"
-            }
-
-        ]
-    },
-    {
-        question: "Jaki angielski zespół nosi przydomek The Invincibles, odnoszący się do jednego z sezonów, w którym zespół ten nie przegrał ani jednego meczu?",
-        answers: [
-            {
-                type: 'asd',
-
-                content: "Nottingham Forest"
-            },
-            {
-                type: 'asd',
-
-                content: "Liverpool"
-            },
-            {
-                type: 'asd',
-
-                content: "Tottenham"
-            },
-            {
-                type: 'asd',
-
-                content: "Arsenal"
-            }
-
-        ]
-    },
-    {
-        question: "Jakiego piłkarza znokautował Zinedine Zidane podczas Mistrzostw Świata w Niemczech w 2006?",
-        answers: [
-            {
-                type: 'asd',
-
-                content: "Materazzi"
-            },
-            {
-                type: 'asd',
-
-                content: "Barzagli"
-            },
-            {
-                type: 'asd',
-
-                content: "Cannavaro"
-            },
-            {
-                type: 'asd',
-
-                content: "Zambrotta"
-            }
-
-        ]
-    },
+    // {
+    //     question: "Jakie drużyn wzięły udział w meczu, w którym padł najwyższy wynik w historii Ligi Mistrzów?",
+    //     answers: [
+    //         {
+    //             type:'dobryWynik',
+    //             content: "Legia Warszawa vs Borussia Dortmund"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Real Madryt vs PAOK Saloniki"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Manchester City vs FC Basel"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "FC Barcelona vs PSG"
+    //         }
+    //
+    //     ]
+    // },
+    // {
+    //     question: "Który zespół może się poszczycić najwiekszą liczbą zwycięstw w angielskiej Premier League?",
+    //     answers: [
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Manchester City"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Arsenal"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Aston Villa"
+    //         },
+    //         {
+    //             type:'dobryWynik',
+    //             content: "Manchester United"
+    //         }
+    //
+    //     ]
+    // },
+    // {
+    //     question: "Kto był zwycięzcą Mistrzostw Europy w 2012 roku?",
+    //     answers: [
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Niemcy"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Włochy"
+    //         },
+    //         {
+    //             type:'dobryWynik',
+    //             content: "Hiszpania"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "San Marino"
+    //         }
+    //
+    //     ]
+    // },
+    // {
+    //     question: "Jaki angielski zespół nosi przydomek The Invincibles, odnoszący się do jednego z sezonów, w którym zespół ten nie przegrał ani jednego meczu?",
+    //     answers: [
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Nottingham Forest"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Liverpool"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Tottenham"
+    //         },
+    //         {
+    //             type:'dobryWynik',
+    //             content: "Arsenal"
+    //         }
+    //
+    //     ]
+    // },
+    // {
+    //     question: "Jakiego piłkarza znokautował Zinedine Zidane podczas Mistrzostw Świata w Niemczech w 2006?",
+    //     answers: [
+    //         {
+    //             type:'dobryWynik',
+    //             content: "Materazzi"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Barzagli"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content:  "Cannavaro"
+    //         },
+    //         {
+    //             type:'slabyWynik',
+    //             content: "Zambrotta"
+    //         }
+    //
+    //     ]
+    // },
 ];
 
 export default quizQuestions;
